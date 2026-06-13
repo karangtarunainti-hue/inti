@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buku Kas - Karang Taruna Inti</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Karang Taruna Inti</h1>
+    <p>Dk. Duwet Sewu, Ds. Baleasri, Kec. Ngariboyo, Kab. Magetan</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="kas.html" class="active">Buku Kas</a>
+    <a href="kegiatan.html">Kegiatan</a>
+    <a href="piutang.html">Piutang</a>
+    <a href="anggota.html">Anggota</a>
+  </nav>
+
+  <main>
+    <h2>Buku Kas</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Tanggal</th>
+          <th>Keterangan</th>
+          <th class="text-right">Debet</th>
+          <th class="text-right">Kredit</th>
+          <th class="text-right">Saldo</th>
+        </tr>
+      </thead>
+      <tbody id="kas-table-body">
+        <tr><td colspan="5">Memuat data...</td></tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Karang Taruna Inti</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="kas.js"></script>
+</body>
+</html>

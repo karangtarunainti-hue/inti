@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Karang Taruna Inti</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Karang Taruna Inti</h1>
+    <p>Dk. Duwet Sewu, Ds. Baleasri, Kec. Ngariboyo, Kab. Magetan</p>
+  </header>
+
+  <nav>
+    <a href="index.html" class="active">Beranda</a>
+    <a href="kas.html">Buku Kas</a>
+    <a href="kegiatan.html">Kegiatan</a>
+    <a href="piutang.html">Piutang</a>
+    <a href="anggota.html">Anggota</a>
+  </nav>
+
+  <main>
+    <section class="cards">
+      <div class="card">
+        <h3>Total Pemasukan</h3>
+        <p id="total-masuk">Memuat...</p>
+      </div>
+      <div class="card">
+        <h3>Total Pengeluaran</h3>
+        <p id="total-keluar">Memuat...</p>
+      </div>
+      <div class="card highlight">
+        <h3>Saldo Akhir</h3>
+        <p id="saldo-akhir">Memuat...</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Pengumuman</h2>
+      <div id="pengumuman-list">Memuat...</div>
+    </section>
+
+    <section>
+      <h2>Kegiatan Terbaru</h2>
+      <div id="kegiatan-list">Memuat...</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Karang Taruna Inti</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

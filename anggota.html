@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anggota - Karang Taruna Inti</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Karang Taruna Inti</h1>
+    <p>Dk. Duwet Sewu, Ds. Baleasri, Kec. Ngariboyo, Kab. Magetan</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="kas.html">Buku Kas</a>
+    <a href="kegiatan.html">Kegiatan</a>
+    <a href="piutang.html">Piutang</a>
+    <a href="anggota.html" class="active">Anggota</a>
+  </nav>
+
+  <main>
+    <h2>Daftar Anggota</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Jabatan</th>
+          <th>No. HP</th>
+          <th>Alamat</th>
+        </tr>
+      </thead>
+      <tbody id="anggota-table-body">
+        <tr><td colspan="4">Memuat data...</td></tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Karang Taruna Inti</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="anggota.js"></script>
+</body>
+</html>
